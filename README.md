@@ -4,7 +4,7 @@ pod 'RequestListener', :configurations => ['Debug']
 ```
 
 ### Target
-监听 app 内所有的网络请求，并将请求的参数和返回值显示在手机端。相当于自己抓自己的包，这样不在电脑前也能够精确的观察接口动态，或者在接手一个新的项目时，可以清楚的看到某个界面的接口请求情况，帮助理清楚界面逻辑。  
+监听 app 内所有的网络请求，并将请求的参数和返回值显示在手机端。相当于自己抓自己的包，这样不在电脑前也能够精确的观察接口动态，或者在接手一个新的项目时，可以清楚的看到某个界面的接口请求情况，帮助理清楚界面逻辑。Demo里面监测的是 `UIWebView`，实际在项目里面监测api接口效果更佳。
 
 ![IMG_2071.PNG](https://upload-images.jianshu.io/upload_images/4103407-0d9de83cab7ecd3e.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
