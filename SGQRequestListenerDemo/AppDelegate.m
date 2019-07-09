@@ -23,7 +23,6 @@
     [self.window makeKeyAndVisible];
     
     [[SGQRequestListener sharedInstance] startMock];
-    
     return YES;
 }
 
