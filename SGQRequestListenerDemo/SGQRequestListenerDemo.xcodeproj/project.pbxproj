@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C55531B622D3140C009625EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531B522D3140C009625EE /* AppDelegate.m */; };
+		C55531B922D3140C009625EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531B822D3140C009625EE /* ViewController.m */; };
+		C55531BE22D3140C009625EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55531BD22D3140C009625EE /* Assets.xcassets */; };
+		C55531C122D3140C009625EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55531BF22D3140C009625EE /* LaunchScreen.storyboard */; };
+		C55531C422D3140C009625EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531C322D3140C009625EE /* main.m */; };
+		C55531F622D31538009625EE /* SGQRequestListener.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531D222D31537009625EE /* SGQRequestListener.m */; };
+		C55531F722D31538009625EE /* NSURLRequest+ResponseTime.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531D622D31537009625EE /* NSURLRequest+ResponseTime.m */; };
+		C55531F822D31538009625EE /* UIView+ShowWithBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531D822D31537009625EE /* UIView+ShowWithBackView.m */; };
+		C55531F922D31538009625EE /* SGQNSURLSessionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531DB22D31537009625EE /* SGQNSURLSessionHook.m */; };
+		C55531FA22D31538009625EE /* SGQNSURLConnectionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531DC22D31537009625EE /* SGQNSURLConnectionHook.m */; };
+		C55531FB22D31538009625EE /* SGQHttpClientHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531E022D31537009625EE /* SGQHttpClientHook.m */; };
+		C55531FC22D31538009625EE /* SGQMockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531E322D31537009625EE /* SGQMockRequest.m */; };
+		C55531FD22D31538009625EE /* SGQMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531E622D31537009625EE /* SGQMockObject.m */; };
+		C55531FE22D31538009625EE /* SGQMockResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531E822D31537009625EE /* SGQMockResponse.m */; };
+		C55531FF22D31538009625EE /* SGQURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531E922D31537009625EE /* SGQURLProtocol.m */; };
+		C555320022D31538009625EE /* SGQRequestInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531EE22D31538009625EE /* SGQRequestInfoCell.m */; };
+		C555320122D31538009625EE /* SGQRequestListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531EF22D31538009625EE /* SGQRequestListView.m */; };
+		C555320222D31538009625EE /* SGQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531F022D31538009625EE /* SGQViewController.m */; };
+		C555320322D31538009625EE /* SGQRequestInfoCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531F122D31538009625EE /* SGQRequestInfoCellItem.m */; };
+		C555320422D31538009625EE /* SGQToast.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531F422D31538009625EE /* SGQToast.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C55531B122D3140C009625EE /* SGQRequestListenerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGQRequestListenerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C55531B422D3140C009625EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C55531B522D3140C009625EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C55531B722D3140C009625EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C55531B822D3140C009625EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C55531BD22D3140C009625EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C55531C022D3140C009625EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C55531C222D3140C009625EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C55531C322D3140C009625EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C55531D222D31537009625EE /* SGQRequestListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRequestListener.m; sourceTree = "<group>"; };
+		C55531D322D31537009625EE /* SGQRequestListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRequestListener.h; sourceTree = "<group>"; };
+		C55531D522D31537009625EE /* UIView+ShowWithBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShowWithBackView.h"; sourceTree = "<group>"; };
+		C55531D622D31537009625EE /* NSURLRequest+ResponseTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+ResponseTime.m"; sourceTree = "<group>"; };
+		C55531D722D31537009625EE /* NSURLRequest+ResponseTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+ResponseTime.h"; sourceTree = "<group>"; };
+		C55531D822D31537009625EE /* UIView+ShowWithBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShowWithBackView.m"; sourceTree = "<group>"; };
+		C55531DB22D31537009625EE /* SGQNSURLSessionHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQNSURLSessionHook.m; sourceTree = "<group>"; };
+		C55531DC22D31537009625EE /* SGQNSURLConnectionHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQNSURLConnectionHook.m; sourceTree = "<group>"; };
+		C55531DD22D31537009625EE /* SGQHttpClientHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQHttpClientHook.h; sourceTree = "<group>"; };
+		C55531DE22D31537009625EE /* SGQNSURLConnectionHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQNSURLConnectionHook.h; sourceTree = "<group>"; };
+		C55531DF22D31537009625EE /* SGQNSURLSessionHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQNSURLSessionHook.h; sourceTree = "<group>"; };
+		C55531E022D31537009625EE /* SGQHttpClientHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQHttpClientHook.m; sourceTree = "<group>"; };
+		C55531E122D31537009625EE /* SGQURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQURLProtocol.h; sourceTree = "<group>"; };
+		C55531E322D31537009625EE /* SGQMockRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQMockRequest.m; sourceTree = "<group>"; };
+		C55531E422D31537009625EE /* SGQMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQMockObject.h; sourceTree = "<group>"; };
+		C55531E522D31537009625EE /* SGQMockResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQMockResponse.h; sourceTree = "<group>"; };
+		C55531E622D31537009625EE /* SGQMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQMockObject.m; sourceTree = "<group>"; };
+		C55531E722D31537009625EE /* SGQMockRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQMockRequest.h; sourceTree = "<group>"; };
+		C55531E822D31537009625EE /* SGQMockResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQMockResponse.m; sourceTree = "<group>"; };
+		C55531E922D31537009625EE /* SGQURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQURLProtocol.m; sourceTree = "<group>"; };
+		C55531EB22D31537009625EE /* SGQRequestInfoCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRequestInfoCellItem.h; sourceTree = "<group>"; };
+		C55531EC22D31537009625EE /* SGQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQViewController.h; sourceTree = "<group>"; };
+		C55531ED22D31537009625EE /* SGQRequestListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRequestListView.h; sourceTree = "<group>"; };
+		C55531EE22D31538009625EE /* SGQRequestInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRequestInfoCell.m; sourceTree = "<group>"; };
+		C55531EF22D31538009625EE /* SGQRequestListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRequestListView.m; sourceTree = "<group>"; };
+		C55531F022D31538009625EE /* SGQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQViewController.m; sourceTree = "<group>"; };
+		C55531F122D31538009625EE /* SGQRequestInfoCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRequestInfoCellItem.m; sourceTree = "<group>"; };
+		C55531F222D31538009625EE /* SGQRequestInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRequestInfoCell.h; sourceTree = "<group>"; };
+		C55531F422D31538009625EE /* SGQToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQToast.m; sourceTree = "<group>"; };
+		C55531F522D31538009625EE /* SGQToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQToast.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C55531AE22D3140C009625EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C55531A822D3140C009625EE = {
+			isa = PBXGroup;
+			children = (
+				C55531B322D3140C009625EE /* SGQRequestListenerDemo */,
+				C55531B222D3140C009625EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C55531B222D3140C009625EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C55531B122D3140C009625EE /* SGQRequestListenerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C55531B322D3140C009625EE /* SGQRequestListenerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C55531D022D31537009625EE /* RequestListener */,
+				C55531B422D3140C009625EE /* AppDelegate.h */,
+				C55531B522D3140C009625EE /* AppDelegate.m */,
+				C55531B722D3140C009625EE /* ViewController.h */,
+				C55531B822D3140C009625EE /* ViewController.m */,
+				C55531BD22D3140C009625EE /* Assets.xcassets */,
+				C55531BF22D3140C009625EE /* LaunchScreen.storyboard */,
+				C55531C222D3140C009625EE /* Info.plist */,
+				C55531C322D3140C009625EE /* main.m */,
+			);
+			path = SGQRequestListenerDemo;
+			sourceTree = "<group>";
+		};
+		C55531D022D31537009625EE /* RequestListener */ = {
+			isa = PBXGroup;
+			children = (
+				C55531D122D31537009625EE /* Listener */,
+				C55531D922D31537009625EE /* Protocol */,
+				C55531EA22D31537009625EE /* View */,
+				C55531D422D31537009625EE /* Category */,
+				C55531F322D31538009625EE /* Tool */,
+			);
+			name = RequestListener;
+			path = ../../RequestListener;
+			sourceTree = "<group>";
+		};
+		C55531D122D31537009625EE /* Listener */ = {
+			isa = PBXGroup;
+			children = (
+				C55531D322D31537009625EE /* SGQRequestListener.h */,
+				C55531D222D31537009625EE /* SGQRequestListener.m */,
+			);
+			path = Listener;
+			sourceTree = "<group>";
+		};
+		C55531D422D31537009625EE /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C55531D722D31537009625EE /* NSURLRequest+ResponseTime.h */,
+				C55531D622D31537009625EE /* NSURLRequest+ResponseTime.m */,
+				C55531D522D31537009625EE /* UIView+ShowWithBackView.h */,
+				C55531D822D31537009625EE /* UIView+ShowWithBackView.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C55531D922D31537009625EE /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C55531E122D31537009625EE /* SGQURLProtocol.h */,
+				C55531E922D31537009625EE /* SGQURLProtocol.m */,
+				C55531DA22D31537009625EE /* ClientHook */,
+				C55531E222D31537009625EE /* Item */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		C55531DA22D31537009625EE /* ClientHook */ = {
+			isa = PBXGroup;
+			children = (
+				C55531DD22D31537009625EE /* SGQHttpClientHook.h */,
+				C55531E022D31537009625EE /* SGQHttpClientHook.m */,
+				C55531DE22D31537009625EE /* SGQNSURLConnectionHook.h */,
+				C55531DC22D31537009625EE /* SGQNSURLConnectionHook.m */,
+				C55531DF22D31537009625EE /* SGQNSURLSessionHook.h */,
+				C55531DB22D31537009625EE /* SGQNSURLSessionHook.m */,
+			);
+			path = ClientHook;
+			sourceTree = "<group>";
+		};
+		C55531E222D31537009625EE /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				C55531E422D31537009625EE /* SGQMockObject.h */,
+				C55531E622D31537009625EE /* SGQMockObject.m */,
+				C55531E722D31537009625EE /* SGQMockRequest.h */,
+				C55531E322D31537009625EE /* SGQMockRequest.m */,
+				C55531E522D31537009625EE /* SGQMockResponse.h */,
+				C55531E822D31537009625EE /* SGQMockResponse.m */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		C55531EA22D31537009625EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C55531EC22D31537009625EE /* SGQViewController.h */,
+				C55531F022D31538009625EE /* SGQViewController.m */,
+				C55531ED22D31537009625EE /* SGQRequestListView.h */,
+				C55531EF22D31538009625EE /* SGQRequestListView.m */,
+				C55531F222D31538009625EE /* SGQRequestInfoCell.h */,
+				C55531EE22D31538009625EE /* SGQRequestInfoCell.m */,
+				C55531EB22D31537009625EE /* SGQRequestInfoCellItem.h */,
+				C55531F122D31538009625EE /* SGQRequestInfoCellItem.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C55531F322D31538009625EE /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C55531F522D31538009625EE /* SGQToast.h */,
+				C55531F422D31538009625EE /* SGQToast.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C55531B022D3140C009625EE /* SGQRequestListenerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C55531C722D3140C009625EE /* Build configuration list for PBXNativeTarget "SGQRequestListenerDemo" */;
+			buildPhases = (
+				C55531AD22D3140C009625EE /* Sources */,
+				C55531AE22D3140C009625EE /* Frameworks */,
+				C55531AF22D3140C009625EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGQRequestListenerDemo;
+			productName = SGQRequestListenerDemo;
+			productReference = C55531B122D3140C009625EE /* SGQRequestListenerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C55531A922D3140C009625EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = shigaoqiang;
+				TargetAttributes = {
+					C55531B022D3140C009625EE = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C55531AC22D3140C009625EE /* Build configuration list for PBXProject "SGQRequestListenerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C55531A822D3140C009625EE;
+			productRefGroup = C55531B222D3140C009625EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C55531B022D3140C009625EE /* SGQRequestListenerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C55531AF22D3140C009625EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55531C122D3140C009625EE /* LaunchScreen.storyboard in Resources */,
+				C55531BE22D3140C009625EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C55531AD22D3140C009625EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55531FE22D31538009625EE /* SGQMockResponse.m in Sources */,
+				C55531B922D3140C009625EE /* ViewController.m in Sources */,
+				C55531FD22D31538009625EE /* SGQMockObject.m in Sources */,
+				C555320022D31538009625EE /* SGQRequestInfoCell.m in Sources */,
+				C55531F622D31538009625EE /* SGQRequestListener.m in Sources */,
+				C55531C422D3140C009625EE /* main.m in Sources */,
+				C555320122D31538009625EE /* SGQRequestListView.m in Sources */,
+				C55531FA22D31538009625EE /* SGQNSURLConnectionHook.m in Sources */,
+				C555320222D31538009625EE /* SGQViewController.m in Sources */,
+				C55531F922D31538009625EE /* SGQNSURLSessionHook.m in Sources */,
+				C555320322D31538009625EE /* SGQRequestInfoCellItem.m in Sources */,
+				C55531F722D31538009625EE /* NSURLRequest+ResponseTime.m in Sources */,
+				C55531FB22D31538009625EE /* SGQHttpClientHook.m in Sources */,
+				C55531FC22D31538009625EE /* SGQMockRequest.m in Sources */,
+				C55531FF22D31538009625EE /* SGQURLProtocol.m in Sources */,
+				C555320422D31538009625EE /* SGQToast.m in Sources */,
+				C55531B622D3140C009625EE /* AppDelegate.m in Sources */,
+				C55531F822D31538009625EE /* UIView+ShowWithBackView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C55531BF22D3140C009625EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C55531C022D3140C009625EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C55531C522D3140C009625EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C55531C622D3140C009625EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C55531C822D3140C009625EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SGQRequestListenerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shigaoqiang.SGQRequestListenerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C55531C922D3140C009625EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SGQRequestListenerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shigaoqiang.SGQRequestListenerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C55531AC22D3140C009625EE /* Build configuration list for PBXProject "SGQRequestListenerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55531C522D3140C009625EE /* Debug */,
+				C55531C622D3140C009625EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C55531C722D3140C009625EE /* Build configuration list for PBXNativeTarget "SGQRequestListenerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C55531C822D3140C009625EE /* Debug */,
+				C55531C922D3140C009625EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C55531A922D3140C009625EE /* Project object */;
+}

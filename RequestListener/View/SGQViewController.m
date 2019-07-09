@@ -35,7 +35,7 @@
 
 - (void)appendNewMockObject:(SGQMockObject *)mockObject {
     @synchronized (_loadedObjects) {
-        [_loadedObjects appendObject:mockObject];
+        [_loadedObjects addObject:mockObject];
     }
     SGQRequestInfoCellItem *item = [[SGQRequestInfoCellItem alloc] initWithMockObject:mockObject];
     

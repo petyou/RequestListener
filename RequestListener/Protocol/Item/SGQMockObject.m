@@ -10,4 +10,8 @@
 
 @implementation SGQMockObject
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@\n%@", self.request, self.response];
+}
+
 @end

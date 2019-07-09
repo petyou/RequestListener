@@ -6,8 +6,10 @@
 //  Copyright © 2019 LiaodaoSports. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "SGQRequestInfoCellItem.h"
 #import "SGQRequestInfoCell.h"
+#import "SGQRequestListener.h"
 
 @interface SGQRequestInfoCellItem()
 
@@ -50,8 +52,8 @@
         
         // --------------- request body
         if (mockObject.request.body) {
-            if (mockObject.request.body.length > 20 * 1024 * 1024) {
-                _requestBodyString = @"to big to show here";
+            if (mockObject.request.body.length > 2 * 1024 * 1024) {
+                _requestBodyString = @"It is to big to show here, may be it is images'data";
             } else {
                 NSError *serializationError = nil;
                 id result = [NSJSONSerialization JSONObjectWithData:mockObject.request.body options:0 error:&serializationError];
@@ -62,7 +64,7 @@
                 }
                 
                 if (_responseString.length == 0) {
-                    _responseString = @"request body can't be parsed";
+                    _responseString = @"request body can't be parsed here";
                 }
             }
             
@@ -75,19 +77,17 @@
         
         // --------------- response
         if ([mockObject.response.data isKindOfClass:[NSData class]]) {
-            if (mockObject.request.body.length > 20 * 1024 * 1024) {
-                _responseString = @"to big to show here";
+            NSError *serializationError = nil;
+            id result = [NSJSONSerialization JSONObjectWithData:mockObject.response.data options:0 error:&serializationError];
+            if (serializationError) {
+                _responseString = [[NSString alloc] initWithData:mockObject.response.data encoding:[SGQRequestInfoCellItem stringEncodingWithRequest:mockObject.response.textEncodingName]];
             } else {
-                NSError *serializationError = nil;
-                id result = [NSJSONSerialization JSONObjectWithData:mockObject.response.data options:0 error:&serializationError];
-                if (serializationError) {
-                    _responseString = [[NSString alloc] initWithData:mockObject.response.data encoding:[SGQRequestInfoCellItem stringEncodingWithRequest:mockObject.response.textEncodingName]];
-                } else {
-                    _responseString = [result description];
-                }
+                _responseString = [result description];
             }
             
-            if (_responseString.length == 0) {
+            if (_responseString.length > [SGQRequestListener sharedInstance].responseDataMaxShowingLength) {
+                _responseString = [NSString stringWithFormat:@"%@...\n To long show all!", [_responseString substringToIndex:10000]];
+            } else if (_responseString.length == 0) {
                 _responseString = @"response can't be parsed";
             }
         } else {

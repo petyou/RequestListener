@@ -34,6 +34,11 @@ static NSString *kNetInfoCellID = @"SGQRequestInfoCellID";
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = UIColor.whiteColor;
         _bottonButtonHeight = 44;
+        if (@available(iOS 11.0, *)) {
+            if ([UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom > 0) {
+                _bottonButtonHeight = 60;
+            }
+        }
         _cellItems = [NSMutableArray array];
         
         [self addSubview:self.tableView];
@@ -49,7 +54,7 @@ static NSString *kNetInfoCellID = @"SGQRequestInfoCellID";
     
     NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:self.cellItems.count - 1 inSection:0];
     [self.tableView beginUpdates];
-    [self.tableView insertRowAtIndexPath:newIndexPath withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationNone];
     [self.tableView endUpdates];
 }
 
@@ -121,7 +126,7 @@ static NSString *kNetInfoCellID = @"SGQRequestInfoCellID";
     item.isUnfolded = !item.isUnfolded;
     
     [self.tableView beginUpdates];
-    [self.tableView reloadRowAtIndexPath:indexPath withRowAnimation:UITableViewRowAnimationNone];
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
     [self.tableView endUpdates];
 }
 
@@ -136,6 +141,11 @@ static NSString *kNetInfoCellID = @"SGQRequestInfoCellID";
         [_bottomLeftButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];;
         _bottomLeftButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [_bottomLeftButton addTarget:self action:@selector(clear) forControlEvents:UIControlEventTouchUpInside];
+        if (@available(iOS 11.0, *)) {
+            if ([UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom > 0) {
+                [_bottomLeftButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 16, 0)];
+            }
+        }
     }
     return _bottomLeftButton;
 }
@@ -149,6 +159,11 @@ static NSString *kNetInfoCellID = @"SGQRequestInfoCellID";
         [_bottomRightButton setTitleColor:UIColor.blackColor forState:UIControlStateNormal];;
         _bottomRightButton.titleLabel.font = [UIFont systemFontOfSize:15];
         [_bottomRightButton addTarget:self action:@selector(hideToBottom) forControlEvents:UIControlEventTouchUpInside];
+        if (@available(iOS 11.0, *)) {
+            if ([UIApplication sharedApplication].keyWindow.safeAreaInsets.bottom > 0) {
+                [_bottomRightButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 16, 0)];
+            }
+        }
     }
     return _bottomRightButton;
 }

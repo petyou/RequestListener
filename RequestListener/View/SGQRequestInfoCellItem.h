@@ -36,7 +36,7 @@
 /// 是否展开的
 @property (nonatomic, assign) BOOL isUnfolded;
 
-/// 不同转态下的cell Height
+/// 不同状态下的cell Height
 @property (nonatomic, assign) CGFloat cellHeight;
 
 - (instancetype)initWithMockObject:(SGQMockObject *)mockObject;

@@ -10,8 +10,6 @@
 #import "SGQNSURLConnectionHook.h"
 #import "SGQNSURLSessionHook.h"
 #import "SGQViewController.h"
-#import "SGQMockObject.h"
-#import "SGQHttpClientHook.h"
 
 @interface SGQRequestListener()
 @property (nonatomic, strong) NSMutableArray<NSString *> *blackListURLStrings;
@@ -29,6 +27,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _started = NO;
+        _responseDataMaxShowingLength = 10000;
         _blackListURLStrings = [NSMutableArray array];
         _hooks = [NSMutableArray array];
         _netWorkViewController = [[SGQViewController alloc] init];
