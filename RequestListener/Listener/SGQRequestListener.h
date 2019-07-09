@@ -41,6 +41,11 @@
 @property (nonatomic, assign) NSInteger responseDataMaxShowingLength;
 
 /**
+ 是否开启
+ */
+@property (nonatomic, assign, readonly, getter = isStarted) BOOL started;
+
+/**
  内部使用
  当前request是否是处于黑名单，如果是，则放过这个请求
  
