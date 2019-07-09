@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author       = { "petyou" => "812607796@qq.com" }
   spec.platform     = :ios, "8.0"
-  spec.source       = { :git => "https://github.com/petyou/RequestListener.git", :tag => "#{spec.version}" }
-  spec.source_files = "RequestListener"
+  spec.source       = { :git => "https://github.com/petyou/RequestListener.git", :tag => spec.version }
+  spec.source_files = "RequestListener/**/*.{h,m}"
   spec.requires_arc = true
 end
