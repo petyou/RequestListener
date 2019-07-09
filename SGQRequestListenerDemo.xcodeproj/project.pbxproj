@@ -86,9 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				C53CA34D22D43FA200989723 /* Listener */,
-				C53CA35022D43FA200989723 /* Category */,
 				C53CA35522D43FA200989723 /* Protocol */,
 				C53CA36622D43FA200989723 /* View */,
+				C53CA35022D43FA200989723 /* Category */,
 				C53CA36F22D43FA200989723 /* Tool */,
 			);
 			path = RequestListener;
@@ -97,8 +97,8 @@
 		C53CA34D22D43FA200989723 /* Listener */ = {
 			isa = PBXGroup;
 			children = (
-				C53CA34E22D43FA200989723 /* SGQRequestListener.m */,
 				C53CA34F22D43FA200989723 /* SGQRequestListener.h */,
+				C53CA34E22D43FA200989723 /* SGQRequestListener.m */,
 			);
 			path = Listener;
 			sourceTree = "<group>";
@@ -106,9 +106,9 @@
 		C53CA35022D43FA200989723 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				C53CA35122D43FA200989723 /* UIView+ShowWithBackView.h */,
-				C53CA35222D43FA200989723 /* NSURLRequest+ResponseTime.m */,
 				C53CA35322D43FA200989723 /* NSURLRequest+ResponseTime.h */,
+				C53CA35222D43FA200989723 /* NSURLRequest+ResponseTime.m */,
+				C53CA35122D43FA200989723 /* UIView+ShowWithBackView.h */,
 				C53CA35422D43FA200989723 /* UIView+ShowWithBackView.m */,
 			);
 			path = Category;
@@ -117,10 +117,10 @@
 		C53CA35522D43FA200989723 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				C53CA35622D43FA200989723 /* ClientHook */,
 				C53CA35D22D43FA200989723 /* SGQURLProtocol.h */,
-				C53CA35E22D43FA200989723 /* Item */,
 				C53CA36522D43FA200989723 /* SGQURLProtocol.m */,
+				C53CA35622D43FA200989723 /* ClientHook */,
+				C53CA35E22D43FA200989723 /* Item */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -154,14 +154,14 @@
 		C53CA36622D43FA200989723 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C53CA36722D43FA200989723 /* SGQRequestInfoCellItem.h */,
 				C53CA36822D43FA200989723 /* SGQViewController.h */,
-				C53CA36922D43FA200989723 /* SGQRequestListView.h */,
-				C53CA36A22D43FA200989723 /* SGQRequestInfoCell.m */,
-				C53CA36B22D43FA200989723 /* SGQRequestListView.m */,
 				C53CA36C22D43FA200989723 /* SGQViewController.m */,
-				C53CA36D22D43FA200989723 /* SGQRequestInfoCellItem.m */,
+				C53CA36922D43FA200989723 /* SGQRequestListView.h */,
+				C53CA36B22D43FA200989723 /* SGQRequestListView.m */,
 				C53CA36E22D43FA200989723 /* SGQRequestInfoCell.h */,
+				C53CA36A22D43FA200989723 /* SGQRequestInfoCell.m */,
+				C53CA36722D43FA200989723 /* SGQRequestInfoCellItem.h */,
+				C53CA36D22D43FA200989723 /* SGQRequestInfoCellItem.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,8 +169,8 @@
 		C53CA36F22D43FA200989723 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				C53CA37022D43FA200989723 /* SGQToast.m */,
 				C53CA37122D43FA200989723 /* SGQToast.h */,
+				C53CA37022D43FA200989723 /* SGQToast.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
