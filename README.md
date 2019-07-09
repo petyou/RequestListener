@@ -1,6 +1,9 @@
 ### 使用
 ```
 pod 'RequestListener', :configurations => ['Debug']
+
+// 注意，需要在设置根window后才能调用
+[[SGQRequestListener sharedInstance] startMock];
 ```
 
 ### Target
