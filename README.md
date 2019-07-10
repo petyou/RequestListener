@@ -19,7 +19,7 @@ pod 'RequestListener'
 ### NSURLProtocol介绍
 `NSURLProtocol` 是属于 `Foundation` 框架里的 [URL Loading System](https://developer.apple.com/documentation/foundation/url_loading_system) 的一部分。它是一个抽象类, 需要继承它后, 重写一系列父类的方法, 且在向系统注册后, 就可以拦截到所有来自 `URL Loading System` 中发出 `request` 请求, 包括使用 `NSURLConnection` 和 `NSURLSession ` 发出去的请求, 使用这两者的第三方框架就也能监听到, 比如 `AFNetWorking`。而视图方面, 通过`UIWebView`、`WKWebView` 发出去的请求也能被监听到（`WKWebView` 的拦截会有些问题）。
 
-[图片上传失败...(image-1d7817-1562661575038)]  
+![96521-804444072007e819.png](https://upload-images.jianshu.io/upload_images/4103407-3d91e20157f367ce.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 拦截到后我们可以修改原来 `requeset`，我们可以什么都不做，那么这个请求的行为就会跟之前的一模一样。 有趣的是我们也可以对它进行修改，比如给它添加参数，让这个请求行为发生变化。或者对返回的 `response` 进行修改，亦或干脆重定向到新的资源，你想要A，我返回给你你B。总之, 是否返回数据, 返回什么数据, 已经由我们决定了。  
 
