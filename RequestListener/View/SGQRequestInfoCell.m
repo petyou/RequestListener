@@ -7,7 +7,7 @@
 //
 
 #import "SGQRequestInfoCell.h"
-#import "SGQToast.h"
+#import "SGQUtility.h"
 
 @interface SGQRequestInfoCell()
 @property (nonatomic, strong) UILabel *urlLabel;
@@ -171,7 +171,8 @@
     
     _urlLabel.text = item.url;
     _methodLabel.text = item.method;
-    _codeLabel.text = @(item.httpCode).stringValue;
+    _codeLabel.text = item.httpCode;
+    _codeLabel.textColor = [item.httpCode isEqualToString:@"200"] ? [UIColor blackColor] : [UIColor redColor];
     _responseTimeLabel.text = [NSString stringWithFormat:@"%.0fms", item.responseTime * 1000];
     
     _requestHeaderContentLabel.text = item.requestHeaderString;
@@ -262,7 +263,7 @@
     if (label.text) {
         UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
         pasteboard.string = label.text;
-        [SGQToast showMessage:@"已复制" duration:0.8];
+        [SGQUtility showMessage:@"已复制" duration:0.8];
     }
 }
 

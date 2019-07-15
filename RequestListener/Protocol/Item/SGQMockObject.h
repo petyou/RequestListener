@@ -6,13 +6,30 @@
 //  Copyright © 2019 LiaodaoSports. All rights reserved.
 //  一个被拦截到的请求
 
-#import "SGQMockRequest.h"
-#import "SGQMockResponse.h"
+#import <Foundation/Foundation.h>
 
 @interface SGQMockObject : NSObject
+@property (nonatomic, strong) NSURLRequest *request;
+@property (nonatomic, strong) NSURLResponse *response;
+@property (nonatomic, strong) NSData *responseData;
+@property (nonatomic, strong) NSError *error;
+@property (nonatomic, assign) NSTimeInterval responseTime;
 
-@property (nonatomic, strong) SGQMockRequest *request;
-@property (nonatomic, strong) SGQMockResponse *response;
++ (instancetype)objectWithRequest:(NSURLRequest *)request
+                       response:(NSURLResponse *)response
+                    responseData:(NSData *)responseData
+                           error:(NSError *)error
+                      responseTime:(NSTimeInterval)responseTime;
+
+
+- (NSString *)statusCode;
+
+- (NSString *)requstHeaderString;
+- (NSString *)requestBodyString;
+
+- (NSString *)responseBodyString;
+
+
+
 
 @end
-

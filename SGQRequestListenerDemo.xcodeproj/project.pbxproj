@@ -13,15 +13,13 @@
 		C53CA3DF22D466A000989723 /* SGQNSURLSessionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3C122D466A000989723 /* SGQNSURLSessionHook.m */; };
 		C53CA3E022D466A000989723 /* SGQNSURLConnectionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3C222D466A000989723 /* SGQNSURLConnectionHook.m */; };
 		C53CA3E122D466A000989723 /* SGQHttpClientHook.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3C622D466A000989723 /* SGQHttpClientHook.m */; };
-		C53CA3E222D466A000989723 /* SGQMockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3C922D466A000989723 /* SGQMockRequest.m */; };
 		C53CA3E322D466A000989723 /* SGQMockObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3CC22D466A000989723 /* SGQMockObject.m */; };
-		C53CA3E422D466A000989723 /* SGQMockResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3CE22D466A000989723 /* SGQMockResponse.m */; };
 		C53CA3E522D466A000989723 /* SGQURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3CF22D466A000989723 /* SGQURLProtocol.m */; };
 		C53CA3E622D466A000989723 /* SGQRequestInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3D422D466A000989723 /* SGQRequestInfoCell.m */; };
 		C53CA3E722D466A000989723 /* SGQRequestListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3D522D466A000989723 /* SGQRequestListView.m */; };
 		C53CA3E822D466A000989723 /* SGQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3D622D466A000989723 /* SGQViewController.m */; };
 		C53CA3E922D466A000989723 /* SGQRequestInfoCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3D722D466A000989723 /* SGQRequestInfoCellItem.m */; };
-		C53CA3EA22D466A000989723 /* SGQToast.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3DA22D466A000989723 /* SGQToast.m */; };
+		C53CA3EA22D466A000989723 /* SGQUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA3DA22D466A000989723 /* SGQUtility.m */; };
 		C55531B622D3140C009625EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531B522D3140C009625EE /* AppDelegate.m */; };
 		C55531B922D3140C009625EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C55531B822D3140C009625EE /* ViewController.m */; };
 		C55531BE22D3140C009625EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55531BD22D3140C009625EE /* Assets.xcassets */; };
@@ -43,12 +41,8 @@
 		C53CA3C522D466A000989723 /* SGQNSURLSessionHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQNSURLSessionHook.h; sourceTree = "<group>"; };
 		C53CA3C622D466A000989723 /* SGQHttpClientHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQHttpClientHook.m; sourceTree = "<group>"; };
 		C53CA3C722D466A000989723 /* SGQURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQURLProtocol.h; sourceTree = "<group>"; };
-		C53CA3C922D466A000989723 /* SGQMockRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQMockRequest.m; sourceTree = "<group>"; };
 		C53CA3CA22D466A000989723 /* SGQMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQMockObject.h; sourceTree = "<group>"; };
-		C53CA3CB22D466A000989723 /* SGQMockResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQMockResponse.h; sourceTree = "<group>"; };
 		C53CA3CC22D466A000989723 /* SGQMockObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQMockObject.m; sourceTree = "<group>"; };
-		C53CA3CD22D466A000989723 /* SGQMockRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQMockRequest.h; sourceTree = "<group>"; };
-		C53CA3CE22D466A000989723 /* SGQMockResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQMockResponse.m; sourceTree = "<group>"; };
 		C53CA3CF22D466A000989723 /* SGQURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQURLProtocol.m; sourceTree = "<group>"; };
 		C53CA3D122D466A000989723 /* SGQRequestInfoCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRequestInfoCellItem.h; sourceTree = "<group>"; };
 		C53CA3D222D466A000989723 /* SGQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQViewController.h; sourceTree = "<group>"; };
@@ -58,8 +52,8 @@
 		C53CA3D622D466A000989723 /* SGQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQViewController.m; sourceTree = "<group>"; };
 		C53CA3D722D466A000989723 /* SGQRequestInfoCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQRequestInfoCellItem.m; sourceTree = "<group>"; };
 		C53CA3D822D466A000989723 /* SGQRequestInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQRequestInfoCell.h; sourceTree = "<group>"; };
-		C53CA3DA22D466A000989723 /* SGQToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQToast.m; sourceTree = "<group>"; };
-		C53CA3DB22D466A000989723 /* SGQToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQToast.h; sourceTree = "<group>"; };
+		C53CA3DA22D466A000989723 /* SGQUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGQUtility.m; sourceTree = "<group>"; };
+		C53CA3DB22D466A000989723 /* SGQUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGQUtility.h; sourceTree = "<group>"; };
 		C55531B122D3140C009625EE /* SGQRequestListenerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGQRequestListenerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55531B422D3140C009625EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C55531B522D3140C009625EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,12 +135,8 @@
 		C53CA3C822D466A000989723 /* Item */ = {
 			isa = PBXGroup;
 			children = (
-				C53CA3C922D466A000989723 /* SGQMockRequest.m */,
 				C53CA3CA22D466A000989723 /* SGQMockObject.h */,
-				C53CA3CB22D466A000989723 /* SGQMockResponse.h */,
 				C53CA3CC22D466A000989723 /* SGQMockObject.m */,
-				C53CA3CD22D466A000989723 /* SGQMockRequest.h */,
-				C53CA3CE22D466A000989723 /* SGQMockResponse.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -169,8 +159,8 @@
 		C53CA3D922D466A000989723 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				C53CA3DB22D466A000989723 /* SGQToast.h */,
-				C53CA3DA22D466A000989723 /* SGQToast.m */,
+				C53CA3DB22D466A000989723 /* SGQUtility.h */,
+				C53CA3DA22D466A000989723 /* SGQUtility.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -276,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C53CA3E422D466A000989723 /* SGQMockResponse.m in Sources */,
 				C55531B922D3140C009625EE /* ViewController.m in Sources */,
 				C53CA3E322D466A000989723 /* SGQMockObject.m in Sources */,
 				C53CA3E622D466A000989723 /* SGQRequestInfoCell.m in Sources */,
@@ -289,9 +278,8 @@
 				C53CA3E922D466A000989723 /* SGQRequestInfoCellItem.m in Sources */,
 				C53CA3DD22D466A000989723 /* NSURLRequest+ResponseTime.m in Sources */,
 				C53CA3E122D466A000989723 /* SGQHttpClientHook.m in Sources */,
-				C53CA3E222D466A000989723 /* SGQMockRequest.m in Sources */,
 				C53CA3E522D466A000989723 /* SGQURLProtocol.m in Sources */,
-				C53CA3EA22D466A000989723 /* SGQToast.m in Sources */,
+				C53CA3EA22D466A000989723 /* SGQUtility.m in Sources */,
 				C55531B622D3140C009625EE /* AppDelegate.m in Sources */,
 				C53CA3DE22D466A000989723 /* UIView+ShowWithBackView.m in Sources */,
 			);

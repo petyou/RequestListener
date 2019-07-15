@@ -13,7 +13,7 @@
 // -----------------未展开的数据
 @property (nonatomic, copy) NSString *url;
 @property (nonatomic, copy) NSString *method;
-@property (nonatomic, assign) NSInteger httpCode;
+@property (nonatomic, copy) NSString *httpCode;
 @property (nonatomic, assign) double responseTime; // s
 @property (nonatomic, assign) CGRect urlFrame;
 @property (nonatomic, assign) CGRect urlBottomLineFrame;

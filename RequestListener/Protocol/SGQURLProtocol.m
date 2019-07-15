@@ -73,9 +73,7 @@ static NSString * const kHandedRequestKey = @"kHandedRequestKey";
                                }
                                
                                dispatch_async(dispatch_get_main_queue(), ^{
-                                   SGQMockObject *loadingObject = [SGQMockObject new];
-                                   loadingObject.request = [[SGQMockRequest alloc] initWithRequest:request];
-                                   loadingObject.response = [[SGQMockResponse alloc] initWitResponse:(NSHTTPURLResponse *)response data:data responseTime:request.responseTime error:error];
+                                   SGQMockObject *loadingObject = [SGQMockObject objectWithRequest:request response:response responseData:data error:error responseTime:request.responseTime];
                                    [[SGQRequestListener sharedInstance] addAnObject:loadingObject];
                                });
                            }];
