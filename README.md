@@ -2,7 +2,7 @@
 ```
 pod 'RequestListener'
 
-// 注意，需要在设置根window后才能调用
+// 注意，需要在设置根window后才能调用，建议在后台模式中以开关的方式打开
 [[SGQRequestListener sharedInstance] startMock];
 ```
 
@@ -163,8 +163,12 @@ static NSString * const kHandedRequestKey = @"kHandedRequestKey";
 可以看到，在这里我们成功地拿到了一次请求的参数部分和返回值部分，解析后显示出来就行了。在公司项目中使用，可以在后台界面设置开关打开，打开后就能监测接口返回数据了。
 
 ```
-SGQMockObject *loadingObject = [SGQMockObject new];
-loadingObject.request = [[SGQMockRequest alloc] initWithRequest:request];
-loadingObject.response = [[SGQMockResponse alloc] initWitResponse:(NSHTTPURLResponse *)response data:data responseTime:request.responseTime error:error];
+ SGQMockObject *loadingObject = [SGQMockObject objectWithRequest:request response:response responseData:data error:error responseTime:request.responseTime];
 [[SGQRequestListener sharedInstance] addAnObject:loadingObject];
+)
 ```
+
+附一张我在项目中使用的图
+
+![1.png](https://upload-images.jianshu.io/upload_images/4103407-561feb5e828cd2f2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
