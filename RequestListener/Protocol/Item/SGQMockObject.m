@@ -69,14 +69,17 @@
         return @"It is to big to show here";
     }
     
-    // 大部分api接口都是这种，部分上传文件接口是@"multipart/form-data",在这里也无法展示
-    if (![contentType hasPrefix:@"application/x-www-form-urlencoded"]) {
-        return @"The request content type is NOT 'application/x-www-form-urlencoded', so it can't be showed pretty here";
+    // 大部分api接口都是这两种，部分上传文件接口是@"multipart/form-data",在这里也无法展示
+    if ([contentType hasPrefix:@"application/x-www-form-urlencoded"]) {
+        NSString *bodyString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        NSDictionary *querys = [SGQUtility dictionaryFromQuery:bodyString];
+        return querys.description;
+    } else if ([contentType hasPrefix:@"application/json"]) {
+        NSDictionary *querys = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+        return querys.description;
     }
-
-    NSString *bodyString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSDictionary *querys = [SGQUtility dictionaryFromQuery:bodyString];
-    return querys.description;
+    
+     return @"The request content type is NOT 'application/x-www-form-urlencoded or 'application/json', so it can't be showed pretty here";
 }
 
 /// mock过来的request，它的HTTPBody很可能被转化成HTTPBodyStream。这里给它还原
